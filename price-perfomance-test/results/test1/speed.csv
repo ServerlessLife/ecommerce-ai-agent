@@ -1,0 +1,13 @@
+platform,group,requests_n,requests_ok,requests_errors,ttfb_p50_ms,ttfb_p95_ms,first_char_p50_ms,first_char_p95_ms,total_p50_ms,total_p95_ms,median_total_ms
+lambdaevent,first,20,20,0,1531,1695,3239,4181,3780,5531,
+lambdaevent,followup,0,0,0,,,,,,,
+lambdaevent,turn1,20,,,,,,,,,3780
+lambdaweb,first,20,20,0,1089,1235,2949,4233,3376,4751,
+lambdaweb,followup,0,0,0,,,,,,,
+lambdaweb,turn1,20,,,,,,,,,3376
+agentcorev1,first,20,20,0,2181,2720,3969,7575,4244,8040,
+agentcorev1,followup,0,0,0,,,,,,,
+agentcorev1,turn1,20,,,,,,,,,4244
+agentcorev2,first,20,20,0,2110,3859,4168,6358,4812,7331,
+agentcorev2,followup,0,0,0,,,,,,,
+agentcorev2,turn1,20,,,,,,,,,4812

@@ -1,0 +1,6 @@
+data,usage_type,quantity,unit,cost_usd
+2026-10-30,EU-DataTransfer-In-Bytes,0.0000234861,GB,0.000000
+2026-10-30,EU-DataTransfer-Out-Bytes,0.0000464749,GB,0.000000
+2026-10-30,EU-DataTransfer-Regional-Bytes,0.0007799333,GB,0.000008
+2026-10-30,EU-Runtime:Consumption-based:Memory,0.3856037201,GB-Hours,0.003644
+2026-10-30,EU-Runtime:Consumption-based:vCPU,0.0085406586,vCPU-Hours,0.000764

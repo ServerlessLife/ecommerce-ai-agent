@@ -1,0 +1,2 @@
+test,platform,requests,ok,errors,sessions,environments,ttfb_p50_ms,ttfb_p95_ms,ttfb_media_ms,first_char_p50_ms,first_char_p95_ms,total_p50_ms,total_p95_ms,total_media_ms,cost_usd,cost_per_request_usd,cost_per_session_usd,details
+test3,lambdaweb,200,199,1,20,2,197,429,223,1181,3940,1876,5736,2313,0.002655,0.00001327,0.00013275,2 environments; total life 1896 s; requests 200 ($0.000060); cpu 13.5 s ($0.000393); memory 570.31 GB-s ($0.002202) | alive after last response: 328 s — tail cost $0.000393

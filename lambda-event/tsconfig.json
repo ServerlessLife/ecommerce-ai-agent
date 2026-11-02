@@ -1,0 +1,9 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    // the auth service uses fetch + Web Crypto types
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "types": ["node", "aws-lambda"]
+  },
+  "include": ["**/*.ts"]
+}

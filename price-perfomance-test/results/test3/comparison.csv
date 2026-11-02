@@ -1,0 +1,5 @@
+test,platform,requests,ok,errors,sessions,environments,ttfb_p50_ms,ttfb_p95_ms,ttfb_media_ms,first_char_p50_ms,first_char_p95_ms,total_p50_ms,total_p95_ms,total_media_ms,cost_usd,cost_per_request_usd,cost_per_session_usd,details
+test3,lambdaevent,200,199,1,20,,247,1304,367,1176,3436,1930,5324,2355,0.005900,0.00002950,0.00029499,200 invocations; billed 439.49 GB-s; requests $0.000040 + compute $0.005860
+test3,lambdaweb,200,199,1,20,2,197,429,223,1181,3940,1876,5736,2313,0.002655,0.00001327,0.00013275,2 environments; total life 1896 s; requests 200 ($0.000060); cpu 13.5 s ($0.000393); memory 570.31 GB-s ($0.002202) | alive after last response: 328 s — tail cost $0.000393
+test3,agentcorev1,200,200,0,20,,241,2075,417,1109,3974,1929,4941,2351,0.040089,0.00020045,0.00200446,20 sessions; vCPU 0.044669 h ($0.003998); memory 3.8192 GB-h ($0.036091); 120 s idle tail per session included
+test3,agentcorev2,200,200,0,20,,263,2923,551,1244,4670,2006,5379,2503,0.119019,0.00059510,0.00595096,20 sessions; vCPU 0.116726 h ($0.014894); memory 6.1612 GB-h ($0.104125); 120 s idle tail per session included

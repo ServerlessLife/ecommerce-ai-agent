@@ -1,0 +1,16 @@
+{
+  "name": "@sample/scripts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Standalone utility scripts — NOT part of the price-performance test (that lives in price-perfomance-test/)",
+  "scripts": {
+    "seed": "AWS_REGION=eu-west-1 tsx seed.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.900.0",
+    "@aws-sdk/lib-dynamodb": "^3.900.0",
+    "@sample/services": "*"
+  }
+}

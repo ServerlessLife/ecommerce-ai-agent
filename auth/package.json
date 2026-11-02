@@ -1,0 +1,15 @@
+{
+  "name": "@sample/auth",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@sample/services": "*"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.162"
+  }
+}

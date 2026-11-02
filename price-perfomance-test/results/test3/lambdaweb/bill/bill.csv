@@ -1,0 +1,5 @@
+data,usage_type,quantity,unit,cost_usd
+2026-10-30,EU-DataTransfer-Out-Bytes,0.0008273842,GB,0.000000
+2026-10-30,EU-Lambda-Web-Memory-GB-Second-ARM,522.1097177734,GB-Seconds,0.002016
+2026-10-30,EU-Lambda-Web-Request-ARM,200,Requests,0.000060
+2026-10-30,EU-Lambda-Web-vCPU-Second-ARM,14.447,vCPU-Seconds,0.000421

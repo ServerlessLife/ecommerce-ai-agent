@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>sample chat — AG-UI + DynamoDB vectors</title>
+    <link rel="icon" href="data:," />
+    <!-- The deployed environment (widget CDK stack) writes this file; it
+         carries the auth URL and agent locations the app reads at load. -->
+    <script src="./config.js"></script>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        line-height: 1.55;
+        color: #1d2733;
+        background: #f6f7f9;
+      }
+      main {
+        max-width: 46rem;
+        margin: 0 auto;
+        padding: 2rem 1.25rem 4rem;
+      }
+      h1 {
+        margin: 0 0 0.25rem;
+        font-size: 1.6rem;
+      }
+      .subtitle {
+        color: #67707c;
+        font-size: 0.95rem;
+        margin-top: 0;
+      }
+      section {
+        background: #fff;
+        border: 1px solid #e3e6ea;
+        border-radius: 10px;
+        padding: 1rem 1.25rem;
+        margin: 1.25rem 0;
+      }
+      h2 {
+        font-size: 1rem;
+        margin: 0 0 0.4rem;
+      }
+      ul {
+        margin: 0;
+        padding-left: 1.2rem;
+      }
+      li {
+        margin: 0.3rem 0;
+      }
+      code {
+        background: #eef1f4;
+        padding: 0.1rem 0.35rem;
+        border-radius: 4px;
+        font-size: 0.85em;
+      }
+      select {
+        font: inherit;
+      }
+      #widget-error {
+        color: #b3261e;
+        margin: 1rem 0 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>sample chat</h1>
+      <p class="subtitle">
+        A minimal product-Q&amp;A chatbot: one <code>search_products</code> tool
+        answers over a 194-product catalog seeded in DynamoDB — a real vector
+        index queried via <code>SearchVectors</code>, embeddings from Amazon
+        Titan. The agent is deployed as several backends below; use the chat
+        window in the bottom-right corner.
+      </p>
+      <section>
+        <h2>Agent implementation</h2>
+        <!-- Filled from config.js below; switching navigates to ?agent=… (a page reload). -->
+        <p>
+          <label for="backend-select">Backend: </label>
+          <select id="backend-select"></select>
+        </p>
+        <p id="widget-error" role="alert" hidden></p>
+      </section>
+      <section>
+        <h2>Try asking…</h2>
+        <ul>
+          <li>“What do I need for a game of basketball?” — the index ranks the <em>Basketball</em> and the <em>Basketball Rim</em> top.</li>
+          <li>“I need shoes for playing baseball.” — the <em>Nike Baseball Cleats</em>, by a wide margin.</li>
+          <li>“I want a scooter for city commuting.” — the <em>Scooter Motorcycle</em> first.</li>
+          <li>“I need food for my dog.” — the <em>Dog Food</em>, with the cat food as runner-up.</li>
+          <li>“I want wireless earbuds for running.” — the <em>Beats Flex</em> and the <em>AirPods</em>.</li>
+        </ul>
+      </section>
+      <!-- The React root: the demo basket section + the chat popup (see src/main.tsx). -->
+      <div id="root"></div>
+    </main>
+    <script>
+      // The implementation switch — pure page chrome. Picks the active
+      // backend (?agent=, or ?agentUrl= override) from config.js's list,
+      // fills the select, and publishes WIDGET_CONFIG.activeBackend for the
+      // widget. Switching navigates to ?agent=… (a page reload).
+      (() => {
+        window.WIDGET_CONFIG ??= {};
+        const config = window.WIDGET_CONFIG;
+        const params = new URLSearchParams(location.search);
+        const select = document.getElementById('backend-select');
+        const errorBox = document.getElementById('widget-error');
+
+        const backends = config.backends ?? [];
+        const override = (params.get('agentUrl') ?? '').replace(/\/+$/, '');
+        const active = override
+          ? {
+              id: 'custom',
+              label: 'custom agent URL',
+              url: override,
+              sessionHeader: backends[0]?.sessionHeader,
+            }
+          : (backends.find((backend) => backend.id === params.get('agent')) ?? backends[0]);
+
+        if (!active?.url) {
+          errorBox.textContent = 'No agent URL configured — check config.js / ?agentUrl=.';
+          errorBox.hidden = false;
+          return;
+        }
+        config.activeBackend = active;
+
+        for (const backend of override ? [active] : backends) {
+          const option = document.createElement('option');
+          option.value = backend.id;
+          option.textContent = backend.label;
+          select.appendChild(option);
+        }
+        select.value = active.id;
+        select.addEventListener('change', () => {
+          params.delete('agentUrl'); // leaving "custom" drops the override
+          params.set('agent', select.value);
+          location.search = params.toString();
+        });
+      })();
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

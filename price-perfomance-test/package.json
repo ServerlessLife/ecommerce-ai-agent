@@ -1,0 +1,14 @@
+{
+  "name": "@sample/price-perfomance-test",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "gen:questions": "tsx gen-questions.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@aws-sdk/client-cloudwatch-logs": "^3.900.0",
+    "@aws-sdk/client-cost-explorer": "^3.1150.0"
+  }
+}

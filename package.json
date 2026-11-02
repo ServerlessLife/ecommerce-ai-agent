@@ -1,0 +1,40 @@
+{
+  "name": "sample",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Minimal AG-UI chatbot on AWS — AgentCore Runtime + Lambda variants",
+  "// pin": "Exact versions: every workspace's ^range must resolve to the SAME copy of @strands-agents/sdk + @ag-ui/aws-strands — duplicate copies break TS private-name identity and the adapter's instanceof checks. npm's default hoisted install keeps one copy at the root.",
+  "workspaces": [
+    "infra",
+    "agentcore",
+    "lambda-event",
+    "lambda-web",
+    "strands-agent",
+    "auth",
+    "services",
+    "scripts",
+    "price-perfomance-test",
+    "widget"
+  ],
+  "scripts": {
+    "login": "aws sso login",
+    "seed": "npm run seed -w @sample/scripts",
+    "deploy:test": "bash scripts/deploy-test.sh",
+    "package": "npm run package -w @sample/agentcore && npm run package -w @sample/lambda-web",
+    "tag-endpoints": "tsx price-perfomance-test/tag-endpoints.ts",
+    "build:widget": "npm run build -w @sample/widget",
+    "synth": "npm run package && npm run build:widget && cd infra && npm run synth",
+    "deploy": "npm run package && npm run build:widget && cd infra && npm run deploy",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "fix": "biome check --write --unsafe ."
+  },
+  "devDependencies": {
+    "@ag-ui/aws-strands": "1.0.0",
+    "@biomejs/biome": "2.6.3",
+    "@strands-agents/sdk": "1.19.0",
+    "@types/node": "^26",
+    "tsx": "^4.23.12",
+    "typescript": "~7.0.2"
+  }
+}

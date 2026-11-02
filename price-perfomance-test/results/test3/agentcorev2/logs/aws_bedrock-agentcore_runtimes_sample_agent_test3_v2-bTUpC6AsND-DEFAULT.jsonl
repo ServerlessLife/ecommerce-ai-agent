@@ -1,0 +1,36 @@
+{"timestamp":1793349147241,"stream":"runtime-logs-loadtest-test3-agentcorev2-20261030-083116-18","message":"[@ag-ui/aws-strands] tool result JSON parse failed for search_products<|channel|>commentary; using raw text SyntaxError: Unexpected token 'T', \"Tool \"sear\"... is not valid JSON\n"}
+{"timestamp":1793349147241,"stream":"runtime-logs-loadtest-test3-agentcorev2-20261030-083116-18","message":"    at JSON.parse (<anonymous>)\n"}
+{"timestamp":1793349147241,"stream":"runtime-logs-loadtest-test3-agentcorev2-20261030-083116-18","message":"    at v6e._runSingleAgentInner (file:///var/task/dist/agentcore/server.js:479:7484)\n"}
+{"timestamp":1793349147241,"stream":"runtime-logs-loadtest-test3-agentcorev2-20261030-083116-18","message":"    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n"}
+{"timestamp":1793349147241,"stream":"runtime-logs-loadtest-test3-agentcorev2-20261030-083116-18","message":"    at async v6e._runSingleAgent (file:///var/task/dist/agentcore/server.js:474:27826)\n"}
+{"timestamp":1793349147241,"stream":"runtime-logs-loadtest-test3-agentcorev2-20261030-083116-18","message":"    at async v6e._runRaw (file:///var/task/dist/agentcore/server.js:474:27660)\n"}
+{"timestamp":1793349147241,"stream":"runtime-logs-loadtest-test3-agentcorev2-20261030-083116-18","message":"    at async file:///var/task/dist/agentcore/server.js:474:27054\n"}
+{"timestamp":1793349147241,"stream":"runtime-logs-loadtest-test3-agentcorev2-20261030-083116-18","message":"    at async v6e.run (file:///var/task/dist/agentcore/server.js:474:27254)\n"}
+{"timestamp":1793349147241,"stream":"runtime-logs-loadtest-test3-agentcorev2-20261030-083116-18","message":"    at async o (file:///var/task/dist/agentcore/server.js:180:3504)\n"}
+{"timestamp":1793349547168,"stream":"runtime-logs-loadtest-test3-agentcorev2-20261030-083116-17","message":"[@ag-ui/aws-strands] tool result JSON parse failed for search_products<|channel|>commentary; using raw text SyntaxError: Unexpected token 'T', \"Tool \"sear\"... is not valid JSON\n"}
+{"timestamp":1793349547168,"stream":"runtime-logs-loadtest-test3-agentcorev2-20261030-083116-17","message":"    at JSON.parse (<anonymous>)\n"}
+{"timestamp":1793349547168,"stream":"runtime-logs-loadtest-test3-agentcorev2-20261030-083116-17","message":"    at v6e._runSingleAgentInner (file:///var/task/dist/agentcore/server.js:479:7484)\n"}
+{"timestamp":1793349547168,"stream":"runtime-logs-loadtest-test3-agentcorev2-20261030-083116-17","message":"    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n"}
+{"timestamp":1793349547168,"stream":"runtime-logs-loadtest-test3-agentcorev2-20261030-083116-17","message":"    at async v6e._runSingleAgent (file:///var/task/dist/agentcore/server.js:474:27826)\n"}
+{"timestamp":1793349547168,"stream":"runtime-logs-loadtest-test3-agentcorev2-20261030-083116-17","message":"    at async v6e._runRaw (file:///var/task/dist/agentcore/server.js:474:27660)\n"}
+{"timestamp":1793349547168,"stream":"runtime-logs-loadtest-test3-agentcorev2-20261030-083116-17","message":"    at async file:///var/task/dist/agentcore/server.js:474:27054\n"}
+{"timestamp":1793349547168,"stream":"runtime-logs-loadtest-test3-agentcorev2-20261030-083116-17","message":"    at async v6e.run (file:///var/task/dist/agentcore/server.js:474:27254)\n"}
+{"timestamp":1793349547168,"stream":"runtime-logs-loadtest-test3-agentcorev2-20261030-083116-17","message":"    at async o (file:///var/task/dist/agentcore/server.js:180:3504)\n"}
+{"timestamp":1793349678915,"stream":"runtime-logs-loadtest-test3-agentcorev2-20261030-083116-3","message":"[@ag-ui/aws-strands] tool result JSON parse failed for search_products<|channel|>commentary; using raw text SyntaxError: Unexpected token 'T', \"Tool \"sear\"... is not valid JSON\n"}
+{"timestamp":1793349678915,"stream":"runtime-logs-loadtest-test3-agentcorev2-20261030-083116-3","message":"    at JSON.parse (<anonymous>)\n"}
+{"timestamp":1793349678915,"stream":"runtime-logs-loadtest-test3-agentcorev2-20261030-083116-3","message":"    at v6e._runSingleAgentInner (file:///var/task/dist/agentcore/server.js:479:7484)\n"}
+{"timestamp":1793349678915,"stream":"runtime-logs-loadtest-test3-agentcorev2-20261030-083116-3","message":"    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n"}
+{"timestamp":1793349678915,"stream":"runtime-logs-loadtest-test3-agentcorev2-20261030-083116-3","message":"    at async v6e._runSingleAgent (file:///var/task/dist/agentcore/server.js:474:27826)\n"}
+{"timestamp":1793349678915,"stream":"runtime-logs-loadtest-test3-agentcorev2-20261030-083116-3","message":"    at async v6e._runRaw (file:///var/task/dist/agentcore/server.js:474:27660)\n"}
+{"timestamp":1793349678915,"stream":"runtime-logs-loadtest-test3-agentcorev2-20261030-083116-3","message":"    at async file:///var/task/dist/agentcore/server.js:474:27054\n"}
+{"timestamp":1793349678915,"stream":"runtime-logs-loadtest-test3-agentcorev2-20261030-083116-3","message":"    at async v6e.run (file:///var/task/dist/agentcore/server.js:474:27254)\n"}
+{"timestamp":1793349678915,"stream":"runtime-logs-loadtest-test3-agentcorev2-20261030-083116-3","message":"    at async o (file:///var/task/dist/agentcore/server.js:180:3504)\n"}
+{"timestamp":1793349679509,"stream":"runtime-logs-loadtest-test3-agentcorev2-20261030-083116-19","message":"[@ag-ui/aws-strands] tool result JSON parse failed for search_products$json; using raw text SyntaxError: Unexpected token 'T', \"Tool \"sear\"... is not valid JSON\n"}
+{"timestamp":1793349679509,"stream":"runtime-logs-loadtest-test3-agentcorev2-20261030-083116-19","message":"    at JSON.parse (<anonymous>)\n"}
+{"timestamp":1793349679509,"stream":"runtime-logs-loadtest-test3-agentcorev2-20261030-083116-19","message":"    at v6e._runSingleAgentInner (file:///var/task/dist/agentcore/server.js:479:7484)\n"}
+{"timestamp":1793349679509,"stream":"runtime-logs-loadtest-test3-agentcorev2-20261030-083116-19","message":"    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n"}
+{"timestamp":1793349679509,"stream":"runtime-logs-loadtest-test3-agentcorev2-20261030-083116-19","message":"    at async v6e._runSingleAgent (file:///var/task/dist/agentcore/server.js:474:27826)\n"}
+{"timestamp":1793349679509,"stream":"runtime-logs-loadtest-test3-agentcorev2-20261030-083116-19","message":"    at async v6e._runRaw (file:///var/task/dist/agentcore/server.js:474:27660)\n"}
+{"timestamp":1793349679509,"stream":"runtime-logs-loadtest-test3-agentcorev2-20261030-083116-19","message":"    at async file:///var/task/dist/agentcore/server.js:474:27054\n"}
+{"timestamp":1793349679509,"stream":"runtime-logs-loadtest-test3-agentcorev2-20261030-083116-19","message":"    at async v6e.run (file:///var/task/dist/agentcore/server.js:474:27254)\n"}
+{"timestamp":1793349679509,"stream":"runtime-logs-loadtest-test3-agentcorev2-20261030-083116-19","message":"    at async o (file:///var/task/dist/agentcore/server.js:180:3504)\n"}

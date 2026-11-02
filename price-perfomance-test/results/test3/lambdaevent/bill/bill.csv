@@ -1,0 +1,3 @@
+data,usage_type,quantity,unit,cost_usd
+2026-10-30,EU-Lambda-GB-Second-ARM,439.481,Lambda-GB-Second,0.005860
+2026-10-30,EU-Request-ARM,200,Requests,0.000000

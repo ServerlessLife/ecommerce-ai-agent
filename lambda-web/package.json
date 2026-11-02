@@ -1,0 +1,25 @@
+{
+  "name": "@sample/lambda-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "LambdaWeb — the sample agent as a Lambda Web Function (a standard express server, no adapters)",
+  "scripts": {
+    "dev": "tsx watch index.ts",
+    "package": "tsx scripts/package.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ag-ui/aws-strands": "^1.0.0",
+    "@sample/services": "*",
+    "@sample/strands-agent": "*",
+    "cors": "^2.8.5",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.6",
+    "esbuild": "^0.28.2",
+    "tsx": "^4.23.12"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "@sample/lambda-event",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ag-ui/core": "^1.0.2",
+    "@ag-ui/encoder": "^1.0.2",
+    "@sample/services": "*",
+    "@sample/strands-agent": "*"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.162"
+  }
+}

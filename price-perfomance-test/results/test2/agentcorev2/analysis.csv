@@ -1,0 +1,2 @@
+test,platform,requests,ok,errors,sessions,environments,ttfb_p50_ms,ttfb_p95_ms,ttfb_media_ms,first_char_p50_ms,first_char_p95_ms,total_p50_ms,total_p95_ms,total_media_ms,cost_usd,cost_per_request_usd,cost_per_session_usd,details
+test2,agentcorev2,10,10,0,10,,3052,3641,3104,4537,5254,4598,5438,4685,0.013545,0.00135453,0.00135453,10 sessions; vCPU 0.018351 h ($0.002342); memory 0.6629 GB-h ($0.011204); 120 s idle tail per session included
